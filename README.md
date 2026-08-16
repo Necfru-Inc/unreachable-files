@@ -35,7 +35,6 @@ data/    評価コーパス構成表（138件・ゴールド記述つき）
          課題定義（35問・正解ファイルID）
          課題別の測定結果
          AI生成品質の判定結果（概要の言明判定・タグ判定・全件記述統計）
-docs/    評価プロトコル（事前登録）／測定前システム点検記録
 ```
 
 各ファイルの説明は `data/README.md` にあります。
@@ -47,9 +46,11 @@ docs/    評価プロトコル（事前登録）／測定前システム点検�
 本測定は、以下の条件下で行われたものです。数値を引用される場合は、あわせて明示してください。
 
 - **自社製品の評価を自社が実施しています。** コーパス作成者・課題作成者・判定者・執筆者は同一人物であり、独立した第三者判定者はいません。
-- **開発環境での測定です。** 本番環境の性能を示すものではありません。
+- **大規模環境に外挿できません。** コーパスは138ファイル・約3.6MBであり、実際の企業環境（数十万ファイル・数十TB規模）とは規模が異なります。
+- **課題は35問であり、業務全体の探索行動を代表するとは限りません。**
 - **人間の探索行動を測っていません。** 「探すのが速くなる」という主張は本測定の射程外です。
-- **大規模環境に外挿できません。** コーパスは3.6MB・138件です。
+- **ベースライン（条件A）は上界として測定しています。** 機械抽出した全キーワードを1語ずつ検索し、最良順位を採用しました。現実の利用者はこれより不利になります。すなわち本測定はベースラインに有利な設計です。
+- **検索結果の取得は上位20件を上限としています。**
 - 緩和策は、プロトコルの事前登録、リトライ禁止、課題別結果と判定根拠の全件公開、集計とは独立の再計算検証の4点にとどまります。
 
 失敗した課題、ゼロ件となった課題、入力自体が構成できなかった課題、および不適合と判定したタグは、すべて件数ではなく個別の行として含めています。
@@ -100,7 +101,7 @@ AI metadata quality: 100.0% summary generation, 0.0% factual error rate (0 of 96
 
 ## Limitations
 
-This is a vendor self-evaluation. The corpus author, task author, judge and report author are the same person; there is no independent third-party judge. Measurement was performed in a development environment, not production. Human search behaviour was not measured. The corpus is 3.6 MB / 138 files and does not extrapolate to large environments. Mitigations are limited to pre-registration, a no-retry rule, full publication of per-task results and judgement rationale, and independent re-computation of all reported figures.
+This is a vendor self-evaluation. The corpus author, task author, judge and report author are the same person; there is no independent third-party judge. The corpus is 138 files / approx. 3.6 MB and does not extrapolate to real enterprise environments of hundreds of thousands of files. The task set is 35 items and may not represent search behaviour as a whole. Human search behaviour was not measured. The baseline condition was measured as an upper bound: every mechanically extracted keyword was issued separately and the best rank was taken, which is more favourable than a real user. Result retrieval was capped at the top 20 items. Mitigations are limited to pre-registration, a no-retry rule, full publication of per-task results and judgement rationale, and independent re-computation of all reported figures.
 
 Failed tasks, zero-result queries, tasks for which no query could be constructed, and every tag judged non-conforming are included as individual rows, not as aggregate counts.
 
