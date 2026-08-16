@@ -2,7 +2,7 @@
 
 **Unreachable Files: A Measured Dataset of Enterprise File Retrieval Reachability**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21963183.svg)](https://doi.org/10.5281/zenodo.21963183)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21963182.svg)](https://doi.org/10.5281/zenodo.21963182)
 
 社内に保存されているのに、キーワード検索では出てこないファイル。この問題を10業種で整理し、138ファイル・35課題で到達性を実測した調査報告の、**評価コーパス定義・課題と正解・課題別の測定結果・AI生成品質の全件判定**です。
 
@@ -64,6 +64,9 @@ data/    評価コーパス構成表（138件・ゴールド記述つき）
 （v1.0.0）. 株式会社ネクフル. https://doi.org/10.5281/zenodo.21963183
 ```
 
+バージョンを問わず最新版を指す DOI は `10.5281/zenodo.21963182` です。
+特定のバージョンを指定する必要がない場合は、こちらを使ってください。
+
 調査報告の本文を引用する場合はこちらです。
 
 ```
@@ -123,6 +126,8 @@ Kusanagi, S. (2026). Unreachable Files: A Measured Dataset of Enterprise File
 Retrieval Reachability (v1.0.0) [Data set]. necfru Inc.
 https://doi.org/10.5281/zenodo.21963183
 ```
+
+The concept DOI `10.5281/zenodo.21963182` always resolves to the latest version.
 
 To cite the report itself:
 
