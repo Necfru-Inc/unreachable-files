@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: >-
+  探せないファイル ― 企業内ファイル到達性の実測データセット
+  (Unreachable Files: A Measured Dataset of Enterprise File
+  Retrieval Reachability)
+message: >-
+  このデータセットを利用する場合は、以下の情報で引用してください。
+type: dataset
+authors:
+  - family-names: Kusanagi
+    given-names: Shunsuke
+    alias: 草薙 俊介
+    affiliation: necfru Inc.
+repository-code: 'https://github.com/Necfru-Inc/unreachable-files'
+url: 'https://necfru.com/blog/security/unreachable-files/'
+abstract: >-
+  企業のファイル保管環境において、保存されているにもかかわらずキーワード検索
+  では到達できないファイル（到達不能ファイル）を4類型に整理し、AI生成の概要・
+  タグを検索対象に含めた場合の到達性の変化を、138ファイル・35課題の事前登録型
+  プロトコルにより実測した調査のデータセット・生ログ・集計コード。
+keywords:
+  - information retrieval
+  - enterprise search
+  - retrieval evaluation
+  - AI-generated metadata
+  - Japanese
+license: CC-BY-4.0
+version: 1.0.0
+date-released: '2026-08-16'
