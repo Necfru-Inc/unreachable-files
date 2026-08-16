@@ -2,6 +2,8 @@
 
 **Unreachable Files: A Measured Dataset of Enterprise File Retrieval Reachability**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21963183.svg)](https://doi.org/10.5281/zenodo.21963183)
+
 社内に保存されているのに、キーワード検索では出てこないファイル。この問題を10業種で整理し、138ファイル・35課題で到達性を実測した調査報告の、**評価コーパス定義・課題と正解・課題別の測定結果・AI生成品質の全件判定**です。
 
 調査報告の全文（日本語・HTML）:
@@ -58,6 +60,13 @@ data/    評価コーパス構成表（138件・ゴールド記述つき）
 ## 引用
 
 ```
+草薙俊介 (2026). 探せないファイル ― 企業内ファイル到達性の実測データセット
+（v1.0.0）. 株式会社ネクフル. https://doi.org/10.5281/zenodo.21963183
+```
+
+調査報告の本文を引用する場合はこちらです。
+
+```
 草薙俊介 (2026). 探せないファイル ― 保存されているのにキーワードでは到達できない
 企業内文書・画像・動画に関する業種横断調査と、自然文による到達性の実測.
 株式会社ネクフル. https://necfru.com/blog/security/unreachable-files/
@@ -108,6 +117,14 @@ Failed tasks, zero-result queries, tasks for which no query could be constructed
 **Not included**: per-query raw logs, the corpus generation script, and any information about the internal implementation of the retrieval systems.
 
 ## Citation
+
+```
+Kusanagi, S. (2026). Unreachable Files: A Measured Dataset of Enterprise File
+Retrieval Reachability (v1.0.0) [Data set]. necfru Inc.
+https://doi.org/10.5281/zenodo.21963183
+```
+
+To cite the report itself:
 
 ```
 Kusanagi, S. (2026). Unreachable Files: A Cross-Industry Study of Enterprise Documents,
